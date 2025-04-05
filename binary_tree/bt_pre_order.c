@@ -18,7 +18,7 @@ static Stack walk(struct binary_node *cur,Stack path){
     return path;
 }
 
-Stack bt_pre_oder(struct binary_node *head){
+Stack bt_pre_order(struct binary_node *head){
     Stack s = create();
     return walk(head, s);
 }

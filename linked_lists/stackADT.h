@@ -12,6 +12,7 @@ void destroy(Stack s);
 void make_empty(Stack s);
 bool is_empty(Stack s);
 bool is_full(Stack s);
+void print(Stack s);
 void push(Stack s,Item data);
 Item pop(Stack s);
 

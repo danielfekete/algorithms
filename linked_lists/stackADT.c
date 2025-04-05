@@ -55,6 +55,18 @@ void push(Stack s, Item data){
     s->head = n;
 }
 
+void print(Stack s){
+    struct node *p;
+    printf("[");
+    for(p = s->head;p != NULL;p = p->next){
+    		if(p != s->head){
+      		printf(", ");
+      }
+      printf("%d",p->data);
+    }
+    printf("]\n");
+}
+
 Item pop(Stack s){
     struct node *old_head;
     Item data;
